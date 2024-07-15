@@ -1,0 +1,94 @@
+.video{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/map/tittle.png) no-repeat center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 30, 0, 0.3);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.video video{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.map{
+    width: 930px;
+    max-width: 90%;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map iframe{
+    display: block;
+    width: 100%;
+    height: 600px;
+    margin-top: 25px;
+}
+
+.map p {
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 25px;
+    margin-bottom: 28px;
+}
+
+.map h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32pt;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.map h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25pt;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.map ul li {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .map {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .map iframe {
+        height: 300px;
+    }
+
+    .map h1 {
+        font-size: 20pt;
+    }
+
+    .map h2 {
+        font-size: 18pt;
+    }
+}

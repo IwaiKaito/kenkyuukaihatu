@@ -1,0 +1,121 @@
+.video{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/teams/title.png) no-repeat center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(176, 48, 32, 0.3);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.video video{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-item {
+    width: 30%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.feature-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.flex li {
+    display: inline-block;
+    background-color: #000000;
+}
+
+.flex li h2::after{
+    content: '';
+    display: block;
+    margin-top: 10px;
+}
+
+.flex li h2{
+    font-size: 6;
+    color:#ffffff;
+    text-align: center;
+}
+
+.flex li .member_text{
+    height: 115px;
+    overflow: scroll;
+}
+
+.flex li p{
+    font-size: 3;
+    color:#ffffff;
+    text-align: center;
+}
+
+.flex li .member_ex {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.flex img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.flex li .member{
+    display: flex;
+    justify-content: space-between;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start;
+    color:#ffffff;
+}
+.flex li .member-le{
+    flex-direction: row-reverse;
+    margin-left: 120px;
+    color:#ffffff;
+}
+
+@media (max-width: 800px) {
+    .flex-item {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .flex li {
+        align-items: center;
+        background-color: #000000
+    }
+}
+
+
